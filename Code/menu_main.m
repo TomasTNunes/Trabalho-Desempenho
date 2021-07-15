@@ -22,7 +22,7 @@ function varargout = menu_main(varargin)
 
 % Edit the above text to modify the response to help menu_main
 
-% Last Modified by GUIDE v2.5 04-Jul-2021 21:17:17
+% Last Modified by GUIDE v2.5 11-Jul-2021 01:37:04
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -62,6 +62,7 @@ guidata(hObject, handles);
 % uiwait(handles.figure1);
 
 
+
 % --- Outputs from this function are returned to the command line.
 function varargout = menu_main_OutputFcn(hObject, eventdata, handles) 
 % varargout  cell array for returning output args (see VARARGOUT);
@@ -95,3 +96,27 @@ function pushbutton_plan_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 menu_planadores
+
+
+% --- Executes on button press in pushbutton_coord.
+function pushbutton_coord_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton_coord (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+menu_coord
+
+
+% --- Executes on button press in pushbutton_prop_atm.
+function pushbutton_prop_atm_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton_prop_atm (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+menu_prop_atm
+
+
+% --- Executes on button press in pushbutton_res_atr.
+function pushbutton_res_atr_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton_res_atr (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+menu_res_atr
