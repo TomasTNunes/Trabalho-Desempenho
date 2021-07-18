@@ -99,7 +99,7 @@ end
 p2_lon_1_grau = floor(p2_lon_1);
 p2_lon_1_min = (p2_lon_1-p2_lon_1_grau)*60;
 
-s1_P2 = sprintf('%c%d %.2f %c%d %.2f',p2_lat_ind,p2_lat_grau,p2_lat_min,...
+s1_P2 = sprintf('%c%02d %.2f %c%03d %.2f',p2_lat_ind,p2_lat_grau,p2_lat_min,...
 p2_lon_1_ind,p2_lon_1_grau,p2_lon_1_min);
        
 p2_lon_2 = p2_lon_2*180/pi;
@@ -114,6 +114,6 @@ end
 p2_lon_2_grau = floor(p2_lon_2);
 p2_lon_2_min = (p2_lon_2-p2_lon_2_grau)*60;
 
-s2_P2 = sprintf('%c%d %.2f %c%d %.2f',p2_lat_ind,p2_lat_grau,p2_lat_min,...
+s2_P2 = sprintf('%c%02d %.2f %c%03d %.2f',p2_lat_ind,p2_lat_grau,p2_lat_min,...
 p2_lon_2_ind,p2_lon_2_grau,p2_lon_2_min);
 end
